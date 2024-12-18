@@ -119,7 +119,7 @@ func importsWrapper(src []byte) ([]byte, error) {
 		Comments:   true,
 		TabIndent:  true,
 		TabWidth:   8,
-		FormatOnly: true, // Disable the insertion and deletion of imports
+		FormatOnly: false, // Disable the insertion and deletion of imports
 	}
 	return imports.Process("", src, &opt)
 }
